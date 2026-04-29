@@ -1,0 +1,115 @@
+.projects { padding: 6rem 0; }
+
+.projects__head { margin-bottom: 3.5rem; }
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .projects__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .projects__grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Card */
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+}
+.project-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 196, 238, 0.1);
+}
+
+.project-card__preview {
+  position: relative;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: var(--bg-deep);
+}
+
+.project-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.project-card:hover .project-card__img { transform: scale(1.04); }
+
+.project-card__fallback {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--bg-deep) 0%, #0c1f3a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-card__fallback-icon {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  color: var(--accent);
+  opacity: 0.35;
+}
+
+.project-card__badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+}
+
+.project-card__body {
+  padding: 1.25rem 1.35rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex: 1;
+}
+
+.project-card__title {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.project-card__desc {
+  font-size: 0.845rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.project-card__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.project-card__link {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  margin-top: 0.5rem;
+  transition: opacity 0.2s;
+}
+.project-card__link:hover { opacity: 0.7; }
+
+/* "En desarrollo" badge — amber accent */
+.project-card__badge[data-wip] {
+  background: rgba(255, 180, 0, 0.12);
+  color: #FFB400;
+  border-color: rgba(255, 180, 0, 0.3);
+}

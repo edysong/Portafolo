@@ -1,0 +1,44 @@
+.stack-section { padding: 6rem 0; }
+
+.stack__head { margin-bottom: 3.5rem; }
+
+.stack__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 3rem;
+}
+
+@media (min-width: 768px) {
+  .stack__grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.stack__cat-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.stack__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.stack__chip {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  padding: 0.3rem 0.7rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  letter-spacing: 0.04em;
+  transition: border-color 0.2s, color 0.2s;
+}
+.stack__chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
