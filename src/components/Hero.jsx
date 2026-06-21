@@ -33,12 +33,12 @@ export default function Hero() {
 
           <p className="hero__title">
             <span className="hero__title-mono">// </span>
-            Ingeniero en Sistemas · Full Stack Developer
+            Ingeniero en Sistemas · Backend Developer Java & AWS
           </p>
 
           <p className="hero__desc">
-            Construyo aplicaciones web robustas y escalables — desde APIs con NestJS y .NET
-            hasta frontends en React. Automatización, cloud Azure y diseño UX/UI incluidos.
+            Especializado en backend con Java, Spring Boot y AWS (EC2, S3, Lambda).
+            Capacidad full-stack: APIs con NestJS, frontends en React y Next.js, automatización con n8n.
           </p>
 
           <div className="hero__actions">

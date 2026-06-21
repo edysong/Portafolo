@@ -2,12 +2,12 @@ import { useReveal } from '../hooks/useReveal'
 import './Stack.css'
 
 const CATEGORIES = [
-  { label: 'Backend',    items: ['C#', '.NET', 'NestJS', 'Node.js'] },
+  { label: 'Backend',    items: ['Java', 'Spring Boot', 'NestJS', 'Node.js'] },
   { label: 'Frontend',   items: ['React', 'Next.js', 'TypeScript', 'Vite'] },
-  { label: 'Cloud',      items: ['Azure', 'Docker', 'Vercel'] },
+  { label: 'Cloud',      items: ['AWS', 'EC2 · S3 · Lambda', 'Docker', 'Vercel'] },
   { label: 'CMS',        items: ['WordPress', 'Strapi'] },
   { label: 'Automation', items: ['n8n', 'GitHub Actions'] },
-  { label: 'DB',         items: ['PostgreSQL', 'SQL Server'] },
+  { label: 'DB',         items: ['MySQL', 'PostgreSQL', 'Prisma'] },
 ]
 
 function StackCategory({ cat, delay }) {

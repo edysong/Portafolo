@@ -32,11 +32,11 @@ const PROJECTS = [
     badge: 'Diseño',
   },
   {
-    title: 'OpticosCare',
-    url: 'https://frontend-web-og.vercel.app',
-    desc: 'Ecommerce para ópticas en desarrollo activo. Catálogo de productos, carrito, autenticación y panel admin. Backend REST con NestJS y PostgreSQL.',
-    stack: ['React', 'NestJS', 'PostgreSQL', 'TypeScript'],
-    badge: 'En desarrollo',
+    title: 'OpticosGroup',
+    url: 'https://opticosgroup.co',
+    desc: 'Plataforma para óptica/retail con backend NestJS, base de datos MySQL vía Prisma, y dos interfaces Next.js (cliente y administración). Desplegado en Hostinger.',
+    stack: ['NestJS', 'Next.js', 'MySQL', 'Prisma'],
+    badge: 'Full Stack',
   },
   {
     title: 'Bot Orquestado',

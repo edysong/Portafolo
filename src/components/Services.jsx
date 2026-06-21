@@ -32,12 +32,12 @@ const TIERS = [
   {
     name: 'Premium',
     mono: '03',
-    desc: 'Aplicación web completa, backend robusto, cloud Azure e integraciones empresariales.',
+    desc: 'Aplicación web completa, backend robusto en Java o NestJS, cloud AWS e integraciones empresariales.',
     features: [
       'App web full stack',
-      'Backend C# / .NET o NestJS',
-      'Base de datos PostgreSQL',
-      'Despliegue en Azure',
+      'Backend Java / Spring Boot o NestJS',
+      'Base de datos MySQL / PostgreSQL',
+      'Despliegue en AWS (EC2, S3, Lambda)',
       'Contenedores Docker',
       'Automatización con n8n',
       'Consultoría técnica',
